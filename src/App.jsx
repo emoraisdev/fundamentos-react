@@ -9,6 +9,10 @@ import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
+import ParOuImpar from "./components/condicional/ParOuImpar";
+import UsuarioInfo from "./components/condicional/UsuarioInfo";
+import DiretaPai from "./components/comunicacao/DiretaPai";
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
 
 export default function App(props) {
   return (
@@ -16,6 +20,19 @@ export default function App(props) {
       <h1>Fundamentos React</h1>
 
       <div className="Cards">
+        <Card titulo="#10 - Comunicação Indireta" color="#9512B3">
+          <IndiretaPai/>
+        </Card>
+        <Card titulo="#09 - Comunicação Direta" color="#1512B3">
+          <DiretaPai></DiretaPai>
+        </Card>
+        <Card titulo="#08 - Renderização Condicional" color="#1558B3">
+          <ParOuImpar numero={20}></ParOuImpar>
+          <ParOuImpar numero={21}></ParOuImpar>
+          <UsuarioInfo usuario={{ nome: "Fernando" }} />
+          <UsuarioInfo />
+          <UsuarioInfo />
+        </Card>
         <Card titulo="#07 - Desafio Repetição" color="#8458B3">
           <TabelaProdutos></TabelaProdutos>
         </Card>
