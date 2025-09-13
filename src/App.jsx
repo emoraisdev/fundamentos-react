@@ -14,18 +14,23 @@ import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
 import Input from "./components/formulario/Input";
+import Contador from "./components/contador/Contador";
 
-export default function App(props) {
+function App() {
+
   return (
     <div className="App">
       <h1>Fundamentos React</h1>
 
       <div className="Cards">
+        <Card titulo="#12 - Contador" color="#7ad21cff">
+          <Contador></Contador>
+        </Card>
         <Card titulo="#11 - Componente Controlado" color="#951113">
-          <Input/>
+          <Input />
         </Card>
         <Card titulo="#10 - Comunicação Indireta" color="#9512B3">
-          <IndiretaPai/>
+          <IndiretaPai />
         </Card>
         <Card titulo="#09 - Comunicação Direta" color="#1512B3">
           <DiretaPai></DiretaPai>
@@ -66,3 +71,5 @@ export default function App(props) {
     </div>
   );
 }
+
+export default App
