@@ -23,8 +23,8 @@ function App() {
       <h1>Fundamentos React</h1>
 
       <div className="Cards">
-        <Card titulo="#12 - Contador" color="#7ad21cff">
-          <Contador></Contador>
+        <Card titulo="#12 - Contador" color="#477219ff">
+          <Contador numeroInicial={10}></Contador>
         </Card>
         <Card titulo="#11 - Componente Controlado" color="#951113">
           <Input />
